@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+</head>
+
+<body>
+    
+    <div>
+        <div>
+            <div></div>
+            <form method="POST">
+                {% csrf_token %}
+                <h2><strong>Login</strong></h2>
+                
+                <div class="formtext"><input class = "forminput" type="text" name="username" placeholder="Username" required></div>
+                <div class="formtext"><input class = "forminput" type="password" name="password" placeholder="Password" required></div>
+                <div class="formtext"><button class = "forminput" type="submit">Sign In</button></div>
+               <div class="formtext"><p>You don't have an account?</p> <a href="/register"> Sign Up here.</a></div>
+
+                {% for message in messages %}
+                <div>
+                    <div>
+                      <p style="color: red; text-align: center;">{{ message }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
