@@ -5,7 +5,7 @@ Authentication page
  This web page enable users to log in using their registered username and password , if user is not registered , they can register.
 
 ## Prerequisites
--python3
+**python3**
 
 ## Installation Instructions
 
@@ -16,7 +16,7 @@ git clone https://github.com/i-am-arathypm/ICFOSS_task.git
 
 3. **Set up a virtual environment:**
     ```bash
-    python -m venv venv
+    python3 -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 4. **Apply database migrations:**
