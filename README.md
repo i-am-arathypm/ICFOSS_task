@@ -12,35 +12,38 @@ This web page enables users to log in using their registered username and passwo
     ```bash
     git clone https://github.com/i-am-arathypm/ICFOSS_task.git
     ```
-
-2. **Set up a virtual environment:**
+2. **Navigate to ICFOSS_task directory**
+    ```bash
+    cd ICFOSS_task
+    ```
+3. **Set up a virtual environment:**
     ```bash
     python3 -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3. **Install the dependencies:**
+4. **Install the dependencies:**
     ```bash
     pip install django
     ```
 
-4. **Apply database migrations:**
+5. **Apply database migrations:**
     ```bash
     python manage.py makemigrations
     python manage.py migrate
     ```
 
-5. **Create a superuser (optional):**
+6. **Create a superuser (optional):**
     ```bash
     python manage.py createsuperuser
     ```
 
-6. **Run the development server:**
+7. **Run the development server:**
     ```bash
     python manage.py runserver
     ```
 
-7. Open your browser and go to `http://127.0.0.1:8000/` to see the project in action.
+8. Open your browser and go to `http://127.0.0.1:8000/` to see the project in action.
 
 ## Database
 - **SQLite**
