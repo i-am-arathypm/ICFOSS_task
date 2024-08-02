@@ -21,7 +21,7 @@ This web page enables users to log in using their registered username and passwo
 
 3. **Install the dependencies:**
     ```bash
-    pip install -r requirements.txt
+    pip install django
     ```
 
 4. **Apply database migrations:**
