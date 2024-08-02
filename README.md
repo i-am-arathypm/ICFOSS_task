@@ -11,7 +11,7 @@ Authentication page
 
 1. **Clone the repository:**
 ```bash
-git clone git@github.com:i-am-arathypm/ICFOSS-task-.git
+git clone [git@github.com:i-am-arathypm/ICFOSS-task-.git](https://github.com/i-am-arathypm/ICFOSS_task.git)
 ```
 
 3. **Set up a virtual environment:**
