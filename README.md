@@ -27,6 +27,7 @@ This web page enables users to log in using their registered username and passwo
 4. **Apply database migrations:**
     ```bash
     python manage.py migrate
+    python manage.py makemigrations
     ```
 
 5. **Create a superuser (optional):**
