@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <style>
+        nav {
+            margin-bottom: 20px;
+        }
+        a {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 36px;
+            color: #007bff; /* Blue color */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add shadow */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="#">Welcome!</a>
+            <div>
+                <a href='/dashboard'>
+                    <button type="button">Home</button>
+                </a>
+                <a href='/logout'>
+                    <button type="button">Log Out</button>
+                </a>
+                <a href='/password'>
+                    <button type="button">Change Password</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

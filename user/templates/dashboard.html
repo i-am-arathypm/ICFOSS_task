@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  
+  {% for bot in bots %}
+   
+    <!-- Add a new line and styled horizontal line -->
+    <hr>
+    <!-- Add a styled description -->
+    <div>
+      <a href="http://localhost:3000/{{bot.id}}" target="_blank">
+        http://localhost:3000/{{bot.id}}
+      </a>
+  </div>
+  
+
+  {% endfor %}
+</div>
+{% endblock %}
